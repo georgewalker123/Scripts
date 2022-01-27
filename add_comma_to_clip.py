@@ -3,7 +3,6 @@ def main():
     cb.OpenClipboard()
     clip = cb.GetClipboardData()
     clip = clip.replace('\r',",\r")
-    print(clip)
     cb.EmptyClipboard()
     cb.SetClipboardText(clip)
     cb.CloseClipboard()
